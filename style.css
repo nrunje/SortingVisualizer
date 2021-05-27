@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f1f2;
+}
+
+body {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #35578f;
+}
+
+nav h1 {
+  color: white;
+  background-color: #35578f;
+  padding: 18px;
+  width: 400px;
+  height: auto;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+}
+
+/* nav ul {
+  background-color: #35578f;
+  display: inline-flex;
+  list-style: none;
+  align-items: center;
+  color: white;
+}
+
+nav li {
+  background-color: #35578f;
+} */
