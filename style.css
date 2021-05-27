@@ -25,8 +25,23 @@ nav h1 {
   font-family: Montserrat, sans-serif;
 }
 
+nav .speed-nav {
+  color: white;
+  background-color: #35578f;
+  display: flex;
+  align-items: center;
+  font-family: Montserrat, sans-serif;
+  margin: auto 10px;
+}
+
+nav .speed-nav label {
+  background-color: #35578f;
+  color: white;
+  margin-right: 10px;
+}
+
 nav .buttons {
-  background: green;
+  background-color: #35578f;
   display: flex;
   align-items: center;
 
@@ -35,5 +50,17 @@ nav .buttons {
 nav button {
   height: 30px;
   width: 150px;
-  margin: auto 25px;
+  margin: auto 15px;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-style: italic;
+  border-radius: 10px;
+  border-color: red;
+  border-width: medium;
+  /* background-color: #7ccef7; */
+  border: 0;
+}
+
+nav button:hover {
+  background-color: orange;
 }
