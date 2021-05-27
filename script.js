@@ -18,6 +18,11 @@ function generate_array() {
 
   for (var k = 0; k < array_size; k++) {
     div_sizes[k] = Math.floor(Math.random() * 0.5*(inp_as.max - inp_as.min));
+
+    // Make sure no div is size 0
+    while (div_sizes[k] == 0) {
+      div_sizes[k] = Math.floor(Math.random() * 0.5*(inp_as.max - inp_as.min));
+    }
     divs[k] = document.createElement("div");
     cont.appendChild(divs[k]);
     margin_size = 0.1;
