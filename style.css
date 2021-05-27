@@ -5,7 +5,7 @@
 }
 
 body {
-  max-width: 1920px;
+  /* max-width: 1920px; */
   margin: 0 auto;
 }
 
@@ -107,4 +107,30 @@ nav .bottom-nav button {
 
 nav .bottom-nav button:hover {
   background-color: orange;
+}
+
+.algo .array_container {
+  display: flex;
+  max-width: 1500px;
+  min-height: 50vh;
+  height: 500px;
+  margin: 0 auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  display: inline;
+  background-color: #4a4a4a;
+  align-items: center;
+}
+
+footer h3 {
+  background-color: #4a4a4a;
+  /* height: auto;
+  width: 400px; */
+  padding: 18px 12px;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
 }
