@@ -21,7 +21,7 @@ function generate_array() {
     divs[k] = document.createElement("div");
     cont.appendChild(divs[k]);
     margin_size = 0.1;
-    divs[k].style = " margin: 5% " + margin_size + "%; background-color: #291463; width:" + (100/array_size-(2*margin_size)) + "%; height:" + (div_sizes[k]) + "%;";
+    divs[k].style = " margin:5% " + margin_size + "%; background-color: #291a6b; width:" + (100/array_size-(2*margin_size)) + "%; height:" + (div_sizes[k]) + "%;";
   }
 }
 
@@ -33,7 +33,7 @@ function update_array_size() {
 window.onload = update_array_size();
 
 for (var k = 0; k < butts_algos.length; k++) {
-  // butts_algos[k].addEventListener("click", runalgo);
+  butts_algos[k].addEventListener("click", runalgo);
 }
 
 function disable_buttons() {
