@@ -5,12 +5,14 @@
 }
 
 body {
-  max-width: 1700px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
 nav {
   background-color: #35578f;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav h1 {
@@ -23,14 +25,15 @@ nav h1 {
   font-family: Montserrat, sans-serif;
 }
 
-/* nav ul {
-  background-color: #35578f;
-  display: inline-flex;
-  list-style: none;
+nav .buttons {
+  background: green;
+  display: flex;
   align-items: center;
-  color: white;
+
 }
 
-nav li {
-  background-color: #35578f;
-} */
+nav button {
+  height: 30px;
+  width: 150px;
+  margin: auto 25px;
+}
