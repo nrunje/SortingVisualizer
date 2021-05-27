@@ -11,22 +11,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"></head>
   <body>
     <nav>
-      <h1>Sorting Algorithms Visualizer</h1>
-      <div class="speed-nav">
-        <label for="cars">Choose a speed:</label>
+      <section class="top-nav">
+        <h1>Sorting Algorithms Visualizer</h1>
+        <div class="buttons">
+          <button type="button" name="insertion">Insertion</button>
+          <button type="button" name="selection">Selection</button>
+          <button type="button" name="Quicksort">Quicksort</button>
+          <button type="button" name="Merge">Merge</button>
+        </div>
+      </section>
 
-        <select name="speed" id="speed">
-          <option value="fast">Fast</option>
-          <option value="medium">Medium</option>
-          <option value="slow">Slow</option>
-        </select>
-      </div>
-      <div class="buttons">
-        <button type="button" name="insertion">Insertion</button>
-        <button type="button" name="selection">Selection</button>
-        <button type="button" name="Quicksort">Quicksort</button>
-        <button type="button" name="Merge">Merge</button>
-      </div>
+      <section class="bottom-nav">
+        <div class="array-inputs">
+          <div class="size-array">
+              <p>Size of the array:</p>
+              <input id="a_size" type="range" min=20 max=150 step=1 value=80>
+          </div>
+          <div class="speed-array">
+              <p>Speed of the algorithm:</p>
+              <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
+          </div>
+        </div>
+
+        <button type="button" name="generate">Generate array!</button>
+      </section>
     </nav>
+
+    <section class="algo">
+      <div class="visual-algo">
+
+      </div>
+    </section>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -9,46 +9,40 @@ body {
   margin: 0 auto;
 }
 
-nav {
+nav .top-nav {
   background-color: #35578f;
   display: flex;
   justify-content: space-between;
 }
 
-nav h1 {
+nav .top-nav h1 {
   color: white;
   background-color: #35578f;
-  padding: 18px;
-  width: 400px;
-  height: auto;
+  font-size: 36px;
+  padding: 18px 24px;
   text-align: center;
   font-family: Montserrat, sans-serif;
 }
 
-nav .speed-nav {
-  color: white;
-  background-color: #35578f;
+nav .top-nav .array-inputs {
+  display: flex;
+}
+
+nav .top-nav .array-inputs .size-array {
+  background-color: green;
   display: flex;
   align-items: center;
-  font-family: Montserrat, sans-serif;
-  margin: auto 10px;
 }
 
-nav .speed-nav label {
-  background-color: #35578f;
-  color: white;
-  margin-right: 10px;
-}
-
-nav .buttons {
+nav .top-nav .buttons {
   background-color: #35578f;
   display: flex;
   align-items: center;
 
 }
 
-nav button {
-  height: 30px;
+nav .top-nav button {
+  height: 40px;
   width: 150px;
   margin: auto 15px;
   text-decoration: none;
@@ -61,6 +55,56 @@ nav button {
   border: 0;
 }
 
-nav button:hover {
+nav .top-nav button:hover {
+  background-color: orange;
+}
+
+nav .bottom-nav {
+  background-color: #35578f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+nav .bottom-nav .array-inputs {
+  background-color: #35578f;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+nav .bottom-nav .array-inputs .size-array {
+  background-color: #35578f;
+  display: flex;
+  padding: 10px;
+}
+
+nav .bottom-nav .array-inputs .size-array p {
+  background-color: #35578f;
+  margin-right: 10px;
+}
+
+nav .bottom-nav .array-inputs .speed-array {
+  background-color: #35578f;
+  display: flex;
+  padding: 10px;
+}
+
+nav .bottom-nav .array-inputs .speed-array p {
+  background-color: #35578f;
+  margin-right: 10px;
+}
+
+nav .bottom-nav button {
+  height: 60px;
+  width: 175px;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+}
+
+nav .bottom-nav button:hover {
   background-color: orange;
 }
