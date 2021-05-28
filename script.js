@@ -10,10 +10,10 @@ var margin_size;
 var cont = document.getElementById('array_container');
 cont.style = "flex-direction: row; align-items: baseline";
 
-inp_gen.addEventListener("click", generate_array);
-inp_as.addEventListener("input", update_array_size);
+inp_gen.addEventListener("click", generateArray);
+inp_as.addEventListener("input", updateArraySize);
 
-function generate_array() {
+function generateArray() {
   cont.innerHTML = "";
 
   for (var k = 0; k < array_size; k++) {
@@ -32,15 +32,15 @@ function generate_array() {
   }
 }
 
-function update_array_size() {
+function updateArraySize() {
   array_size = inp_as.value;
-  generate_array();
+  generateArray();
 }
 
-window.onload = update_array_size();
+window.onload = updateArraySize();
 
 for (var k = 0; k < butts_algos.length; k++) {
-  butts_algos[k].addEventListener("click", runalgo);
+  butts_algos[k].addEventListener("click", runAlgo);
 }
 
 function disable_buttons() {
@@ -56,9 +56,8 @@ function disable_buttons() {
     }
 }
 
-function runalgo() {
+function runAlgo() {
   disable_buttons();
-  console.log("Here");
 
   this.classList.add("butt_selected");
 
@@ -67,7 +66,6 @@ function runalgo() {
       break;
   }
 
-  console.log("Also here");
   enableButtons();
 }
 
@@ -87,7 +85,7 @@ function visSpeed() {
                 break;
         case 4: speed=1000;
                 break;
-        case 5: speed=10000;
+        case 5: speed=5000;
                 break;
   }
 
@@ -99,7 +97,7 @@ var c_delay = 0;
 
 function divUpdate(cont, height, color) {
   window.setTimeout(function(){
-        cont.style=" margin:0% " + margin_size + "%; width:" + (100/array_size-(2*margin_size)) + "%; height:" + height + "%; background-color:" + color + ";";
+        cont.style=" margin:5% " + margin_size + "%; width:" + (100/array_size-(2*margin_size)) + "%; height:" + height + "%; background-color:" + color + ";";
     },c_delay+=delay_time);
 }
 
