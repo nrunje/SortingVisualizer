@@ -13,6 +13,7 @@ cont.style = "flex-direction: row; align-items: baseline";
 inp_gen.addEventListener("click", generateArray);
 inp_as.addEventListener("input", updateArraySize);
 
+/** Generates a random array to sort */
 function generateArray() {
   cont.innerHTML = "";
 
@@ -32,6 +33,7 @@ function generateArray() {
   }
 }
 
+/** Updates the size of array and generates a new array */
 function updateArraySize() {
   array_size = inp_as.value;
   generateArray();
@@ -39,10 +41,12 @@ function updateArraySize() {
 
 window.onload = updateArraySize();
 
+/* Creates click ability for all the different algorithms */
 for (var k = 0; k < butts_algos.length; k++) {
   butts_algos[k].addEventListener("click", runAlgo);
 }
 
+/** Disables the buttons while the sorting algorithm commences */
 function disable_buttons() {
     for(var i=0;i<butts_algos.length;i++)
     {
@@ -56,6 +60,7 @@ function disable_buttons() {
     }
 }
 
+/** Calls the applicable sorting algorithm */
 function runAlgo() {
   disable_buttons();
 
@@ -73,6 +78,7 @@ function runAlgo() {
 var speed = 1000;
 inp_aspeed.addEventListener("input", visSpeed);
 
+/** Sets the speed of the visualization */
 function visSpeed() {
   var array_speed = inp_aspeed.value;
 
@@ -85,7 +91,7 @@ function visSpeed() {
                 break;
         case 4: speed=1000;
                 break;
-        case 5: speed=5000;
+        case 5: speed=2000;
                 break;
   }
 
@@ -95,12 +101,16 @@ function visSpeed() {
 var delay_time = 10000 / (Math.floor(array_size/10)*speed);
 var c_delay = 0;
 
+/** Updates the margin, height, and color of div.
+
+    cont: type 'div' to change */
 function divUpdate(cont, height, color) {
   window.setTimeout(function(){
         cont.style=" margin:5% " + margin_size + "%; width:" + (100/array_size-(2*margin_size)) + "%; height:" + height + "%; background-color:" + color + ";";
-    },c_delay+=delay_time);
+    }, c_delay+=delay_time);
 }
 
+/** Enables all buttons in the nav bar */
 function enableButtons() {
   window.setTimeout(function(){
         for(var i=0;i<butts_algos.length;i++)
@@ -113,5 +123,5 @@ function enableButtons() {
             inp_gen.disabled=false;
             inp_aspeed.disabled=false;
         }
-    },c_delay+=delay_time);
+    }, c_delay+=delay_time);
 }
