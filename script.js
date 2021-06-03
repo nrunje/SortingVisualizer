@@ -69,6 +69,8 @@ function runAlgo() {
   switch (this.innerHTML) {
     case "Insertion": Insertion();
       break;
+    case "Selection": Selection();
+      break;
   }
 
   enableButtons();
@@ -89,9 +91,9 @@ function visSpeed() {
                 break;
         case 3: speed=100;
                 break;
-        case 4: speed=1000;
+        case 4: speed=250;
                 break;
-        case 5: speed=2000;
+        case 5: speed=750;
                 break;
   }
 
