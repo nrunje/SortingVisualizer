@@ -71,6 +71,8 @@ function runAlgo() {
       break;
     case "Selection": Selection();
       break;
+    case "Merge": Merge();
+      break;
   }
 
   enableButtons();
