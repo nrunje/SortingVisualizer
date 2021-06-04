@@ -73,6 +73,8 @@ function runAlgo() {
       break;
     case "Merge": Merge();
       break;
+    case "Stalinsort": Stalin();
+      break;
   }
 
   enableButtons();
