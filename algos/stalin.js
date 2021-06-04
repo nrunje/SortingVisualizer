@@ -2,6 +2,7 @@
 function Stalin() {
   console.log("Array size is " + array_size);
   var curr = 0;
+  c_delay = 0;
 
   for (var k = 0; k < array_size; k++) {
     if (div_sizes[k] > curr) {
@@ -12,17 +13,12 @@ function Stalin() {
     }
   }
 
-  window.setTimeout(1000);
-
   for (var i = 0; i < array_size; i++) {
-    // console.log("Timeout done");
+    console.log("Timeout done");
       divUpdate(divs[i], div_sizes[i], "darkgreen");
-    // if (div_sizes[i] == null) {
-    //   console.log("Background color is red");
-    //   divs[i].style.visibility = "hidden";
-    // }
   }
 
+  enableButtons();
 }
 
 /** Updates the margin, height, and color of div.
