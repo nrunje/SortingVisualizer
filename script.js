@@ -75,6 +75,8 @@ function runAlgo() {
       break;
     case "Stalinsort": Stalin();
       break;
+    case "Quicksort": Quick();
+      break;
   }
 
   enableButtons();
